@@ -15,6 +15,7 @@
   font-display: swap; /* Optional: improves performance while the font loads */
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -2107,7 +2108,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		top: -2.5em;
-	}
+		}
 
 		#logo h1 {
 			font-weight: 900;
@@ -2116,26 +2117,29 @@ input, select, textarea {
 			font-size: 2em;
 			letter-spacing: 0.25em;
 		}
+		#logo .fade {
+			color: black;
+			transition: color 10s;
+		}
 
 		#logo p {
 			color: #eee;
 			color: rgba(255, 255, 255, 0.5);
 			text-transform: uppercase;
-			margin: 1.25em 0 0 0;
 			display: block;
 			letter-spacing: 0.2em;
 			font-size: 0.9em;
 		}
-		#logo img {
+		#logo img{
+		    display: relative;
             max-width: 33vw;
             height: 33vh;
-            filter: drop-shadow(4px 4px 6px black);
-            margin: 0;
-            padding: 0;
+            filter: drop-shadow(2px 2px 4px black);
+            transition: filter 10s;
 		}
-		#logo img:hover {
-            height: auto;
-            filter: drop-shadow(4px 4px 6px #705800);
+		#logo img:hover{
+            filter: drop-shadow(2px 2px 4px #b38c00);
+            transition: filter 2s;
         }
 
 
@@ -2210,10 +2214,11 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a {
                     background-color: #324D5E;
+                    transition: background-color 1s;
 				}
 
 				#nav > ul > li.current > a{
-				    background: #324D5E;
+				    background-color: #324D5E;
                     margin: 0;
 		            padding: 0;
 				}
