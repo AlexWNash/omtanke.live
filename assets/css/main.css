@@ -2106,11 +2106,10 @@ input, select, textarea {
 			font-size: 0.9em;
 		}
 		#logo img {
-            max-width: 50%;
+            max-width: 60%;
             height: auto;
 		}
 		#logo img:hover {
-            max-width: 55%;
             height: auto;
             filter: drop-shadow(4px 4px 6px gray);
         }
