@@ -2108,6 +2108,7 @@ input, select, textarea {
 		#logo img {
             max-width: 60%;
             height: auto;
+            filter: drop-shadow(4px 4px 6px black);
 		}
 		#logo img:hover {
             height: auto;
