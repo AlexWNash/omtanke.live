@@ -2112,7 +2112,7 @@ input, select, textarea {
 		}
 		#logo img:hover {
             height: auto;
-            filter: drop-shadow(4px 4px 6px gray);
+            filter: drop-shadow(4px 4px 6px #705800);
         }
 
 
@@ -2130,14 +2130,19 @@ input, select, textarea {
 		#nav > ul {
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px black;
-			padding: 0 1.5em 0 1.5em;
+			border-style: solid;
+			border-width: 0.25em;
+			border-color: #705800;
+			padding: 0 1em 0 1em;
+			background: #324D5E;
+			position: relative;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
 				text-align: center;
-				padding: 0 1.5em 0 1.5em;
+				padding: 0 0.5em 0 0.5em;
+				width: 10vw;
 			}
 
 				#nav > ul > li > ul {
@@ -2146,28 +2151,28 @@ input, select, textarea {
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
-					color: black;
+					color: #705800;
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
-					letter-spacing: 0.25em;
-					height: 5em;
-					line-height: 5em;
+					font-size: 1.25em;
+					font-weight: 900;
+					letter-spacing: 0.10em;
+					height: 3em;
+					line-height: 3em;
 					-moz-transition: all .25s ease-in-out;
 					-webkit-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
 					-ms-transition: all .25s ease-in-out;
 					transition: all .25s ease-in-out;
 					outline: 0;
+					text-shadow: .05em .05em black;
 				}
 
 				#nav > ul > li:hover > a {
-					color: black;
-					box-shadow: 1 1 1 1 black;
+
 				}
 
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
-					color: #705800;
 				}
 
 	.dropotron {
