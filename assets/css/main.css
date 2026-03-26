@@ -7,6 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2085,7 +2089,7 @@ input, select, textarea {
 		width: 100%;
 		text-align: center;
 		position: relative;
-		top: 1.5em;
+		top: -2.5em;
 	}
 
 		#logo h1 {
@@ -2106,9 +2110,11 @@ input, select, textarea {
 			font-size: 0.9em;
 		}
 		#logo img {
-            max-width: 33%;
-            height: auto;
+            max-width: 33vw;
+            height: 33vh;
             filter: drop-shadow(4px 4px 6px black);
+            margin: 0;
+            padding: 0;
 		}
 		#logo img:hover {
             height: auto;
@@ -2120,41 +2126,53 @@ input, select, textarea {
 
 	#nav {
 		position: absolute;
-		display: inline;
+		display: flex;
+        justify-content: center;
+        align-items: center;
 		top: 2.5em;
 		left: 0;
 		width: 100%;
 		text-align: center;
+		margin: 0;
+	    padding: 0;
 	}
 
 		#nav > ul {
-			display: inline-block;
+			display: flex;
 			border-radius: 0.35em;
 			border-style: solid;
 			border-width: 0.2em;
 			border-color: #705800;
-			padding: 0 0 0 0;
 			background: transparent;
-			position: relative;
+			position: absolute;
+			margin: 0;
+            padding: 0;
+
 		}
 
 			#nav > ul > li {
 				display: inline-block;
-				text-align: center;
-				padding: 0 0 0 0;
+				text-align: justify;
+				box-sizing: border-box;
 				width: 8vw;
+				margin: 0;
+		        padding: 0;
+
 			}
 
 				#nav > ul > li > ul {
 					display: none;
+					margin: 0;
+		            padding: 0;
 				}
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
 					color: #705800;
 					text-transform: uppercase;
+					text-align:center;
 					text-decoration: none;
-					font-size: 1.2em;
+					font-size: 1.25em;
 					font-weight: 700;
 					letter-spacing: 0.1em;
 					height: 100%;
@@ -2165,15 +2183,19 @@ input, select, textarea {
 					-ms-transition: all .25s ease-in-out;
 					transition: all .25s ease-in-out;
 					text-shadow: 1px 1px 1px black;
-					padding: 1px 1px 1px 1px;
+					margin: 0;
+		            padding: 0;
+
 				}
 
 				#nav > ul > li:hover > a {
-                    background: #324D5E;
-                    border-radius: 0.1em;
+                    background-color: #324D5E;
 				}
 
-				#nav > ul > li.active > a, #nav > ul > li.active > span {
+				#nav > ul > li.current > a{
+				    background: #324D5E;
+                    margin: 0;
+		            padding: 0;
 				}
 
 	.dropotron {
