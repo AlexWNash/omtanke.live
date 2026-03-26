@@ -14,6 +14,13 @@
   font-style: normal;
   font-display: swap; /* Optional: improves performance while the font loads */
 }
+@font-face {
+  font-family: 'elven'; /* A name you choose */
+  src: url('fonts/half-elven-font/HalfElvenCondensedItalicCondensedItalic-3EO3.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: improves performance while the font loads */
+}
 
 
 * {
@@ -2020,7 +2027,8 @@ input, select, textarea {
 		}
 
 			.wrapper.style1 .title {
-				background: #000000 url("images/overlay.png");
+				background-color: black;
+				position: absolute;
 				color: #705800;
 			}
 
@@ -2142,6 +2150,22 @@ input, select, textarea {
             transition: filter 2s;
         }
 
+        .fade_in {
+            font-family: elven;
+            font-size: 1.5em;
+            font-weight: 100;
+            filter: drop-shadow(1px 1px 1px black);
+            color: #FCF5E5;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 12s;
+            top: 65%;
+
+        }
+        .fade_in:hover{
+            opacity: 1;
+            transition: opacity 8s;
+        }
 
 /* Nav */
 
