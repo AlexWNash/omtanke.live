@@ -2019,13 +2019,14 @@ input, select, textarea {
 				color: #705800;
 			}
 
-		.wrapper.style2 {
-			background: ##705800;
+		.wrapper.style2, .wrapper.style2 h1, .wrapper.style2 h2{
+			background: #324D5E;
+			color: black;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background: #324D5E;
+				color: black;
 			}
 
 		.wrapper.style3 {
@@ -2063,10 +2064,9 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		position: relative;
-		height: 24em;
-		background-color: #324D5E;
-		background-image: url('images/winter_background.png');
+		height: 35em;
 	    background-size: cover;
+	    background-color: black;
 		padding: 0;
 	}
 
@@ -2080,7 +2080,16 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 35em;
+		    background-image: url('images/winter_bg.png');
+		}
+		.events #header {
+		    background-image: url('images/spring_bg.png');
+		}
+		.media #header {
+		    background-image: url('images/summer_bg.png');
+		}
+		.store #header {
+		    background-image: url('images/autumn_bg.png');
 		}
 
 /* Logo */
