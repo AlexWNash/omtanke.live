@@ -7,6 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+@font-face {
+  font-family: 'Norse_Bold'; /* A name you choose */
+  src: url('fonts/NorseBold-2Kge.otf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; /* Optional: improves performance while the font loads */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2166,6 +2174,9 @@ input, select, textarea {
 				width: 8vw;
 				margin: 0;
 		        padding: 0;
+		        font-family: Norse_Bold;
+		        font-size: 1em;
+
 
 			}
 
@@ -2181,8 +2192,8 @@ input, select, textarea {
 					text-transform: uppercase;
 					text-align:center;
 					text-decoration: none;
-					font-size: 1.25em;
-					font-weight: 700;
+					font-size: 1.75em;
+					font-weight: 900;
 					letter-spacing: 0.1em;
 					height: 100%;
 					line-height: 1.75em;
