@@ -2131,17 +2131,17 @@ input, select, textarea {
 			display: inline-block;
 			border-radius: 0.35em;
 			border-style: solid;
-			border-width: 0.25em;
+			border-width: 0.2em;
 			border-color: #705800;
-			padding: 0 1em 0 1em;
-			background: #324D5E;
+			padding: 0 0 0 0;
+			background: transparent;
 			position: relative;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
 				text-align: center;
-				padding: 0 0.5em 0 0.5em;
+				padding: 0 0 0 0;
 				width: 10vw;
 			}
 
@@ -2154,22 +2154,23 @@ input, select, textarea {
 					color: #705800;
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 1.25em;
-					font-weight: 900;
-					letter-spacing: 0.10em;
-					height: 3em;
-					line-height: 3em;
+					font-size: 1.2em;
+					font-weight: 700;
+					letter-spacing: 0.1em;
+					height: 100%;
+					line-height: 1.75em;
 					-moz-transition: all .25s ease-in-out;
 					-webkit-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
 					-ms-transition: all .25s ease-in-out;
 					transition: all .25s ease-in-out;
-					outline: 0;
-					text-shadow: .05em .05em black;
+					text-shadow: 1px 1px 1px black;
+					padding: 1px 1px 1px 1px;
 				}
 
 				#nav > ul > li:hover > a {
-
+                    background: #324D5E;
+                    border-radius: 0.1em;
 				}
 
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
