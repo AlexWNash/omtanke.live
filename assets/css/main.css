@@ -2106,7 +2106,7 @@ input, select, textarea {
 			font-size: 0.9em;
 		}
 		#logo img {
-            max-width: 60%;
+            max-width: 33%;
             height: auto;
             filter: drop-shadow(4px 4px 6px black);
 		}
