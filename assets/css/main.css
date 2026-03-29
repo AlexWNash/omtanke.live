@@ -2205,10 +2205,10 @@ input, select, textarea {
             max-width: 33vw;
             height: 33vh;
             filter: drop-shadow(2px 2px 4px black);
-            transition: filter 10s;
+            transition: filter 4s;
 		}
 		#logo img:hover{
-            filter: drop-shadow(4px 4px 4px #cca000);
+            filter: drop-shadow(3px 3px 5px #c3a022);
             transition: filter 2s;
         }
 
