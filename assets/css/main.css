@@ -229,6 +229,12 @@ input, select, textarea {
 
 	}
 
+	.container img{
+	    max-width: 100%;
+	    height: auto;
+
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			.container {
@@ -2096,6 +2102,7 @@ input, select, textarea {
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
 				color: #705800;
+
 			}
 
 		.wrapper.style2, .wrapper.style2 h1, .wrapper.style2 h2{
@@ -2374,11 +2381,13 @@ input, select, textarea {
 			color: #705800;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-			font-size: 2.75em;
+			font-size: 1em;
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
 			margin-bottom: 1em;
+			width: 80%;
+			display: inline-block;
 		}
 
 			#intro p.style2 a {
