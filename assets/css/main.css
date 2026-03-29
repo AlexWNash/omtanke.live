@@ -266,6 +266,9 @@ input, select, textarea {
 			}
 
 		}
+
+
+
 		.carousel{
             width: 100%;
 
@@ -2054,14 +2057,14 @@ input, select, textarea {
 			text-transform: uppercase;
 			display: block;
 			font-weight: 700;
-			letter-spacing: 0.25em;
-			font-size: 0.9em;
-			width: 25em;
-			height: 3.25em;
-			top: -3.25em;
-			line-height: 3.25em;
+			letter-spacing: 0.1em;
+			font-size: 1em;
+			width: 12vw;
+			height: 2.5em;
+			top: -2.5em;
+			line-height: 2.5em;
 			margin-bottom: -3.25em;
-			margin-left: -12.5em;
+			margin-left: -5.5vw;
 			padding-top: 0.5em;
 		}
 
@@ -2092,13 +2095,31 @@ input, select, textarea {
 		.wrapper.style1 {
 			background: #000000 url("images/overlay.png");
 			color: #705800;
+			text-align: center;
+
 		}
 
 			.wrapper.style1 .title {
+			    font-size: 1em;
 				background-color: black;
 				position: absolute;
 				color: #705800;
+
+
 			}
+			.wrapper.style1 p{
+                font-weight: 700;
+                color: inherit;
+                border-radius: 0.35em;
+                box-shadow: inset 0px 0px 1px 1px #705800;
+                font-size: 1em;
+                letter-spacing: 0.075em;
+                line-height: 1.35em;
+                padding: 1em 0 1em 0;
+                margin-bottom: 1em;
+                width: 80%;
+                display: inline-block;
+		    }
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
 				color: #705800;
@@ -2108,7 +2129,23 @@ input, select, textarea {
 		.wrapper.style2, .wrapper.style2 h1, .wrapper.style2 h2{
 			background: #324D5E;
 			color: black;
+			text-align: center;
+
+
 		}
+		    .wrapper.style2 p{
+		        color: black;
+                font-weight: 700;
+                border-radius: 0.35em;
+                box-shadow: inset 0px 0px 1px 1px black;
+                font-size: 1em;
+                letter-spacing: 0.075em;
+                line-height: 1.35em;
+                padding: 1em 0 1em 0;
+                margin-bottom: 1em;
+                width: 80%;
+                display: inline-block;
+		    }
 
 			.wrapper.style2 .title {
 				background: #324D5E;
@@ -2277,10 +2314,10 @@ input, select, textarea {
 			}
 
 				#nav > ul > li > ul {
-					display: none;
 					margin: 0;
 		            padding: 0;
 				}
+
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
@@ -2302,6 +2339,7 @@ input, select, textarea {
 					margin: 0;
 		            padding: 0;
 
+
 				}
 
 				#nav > ul > li:hover > a {
@@ -2321,8 +2359,8 @@ input, select, textarea {
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
 		box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-		min-width: 12em;
-		text-align: left;
+		min-width: 8vw;
+		text-align: center;
 		margin-top: -1.25em;
 		margin-left: -1px;
 		list-style: none;
@@ -2399,6 +2437,8 @@ input, select, textarea {
 			width: 48em;
 			margin: 0 auto;
 		}
+			
+
 
 /* Features */
 
@@ -2410,13 +2450,13 @@ input, select, textarea {
 		margin-top: 5em;
 	}
 
-/* Highlights */
+/* Patreon */
 
-	#highlights .highlight {
+	#patreon .highlight {
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
+		#patreon .highlight h3 {
 			color: #e54519;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
@@ -2619,6 +2659,17 @@ input, select, textarea {
 				#intro p.style2 {
 					font-size: 2.25em;
 				}
+            #about {
+                padding-bottom: 7em;
+            }
+    
+                #about p.style1 {
+                    font-size: 1.25em;
+                }
+    
+                #about p.style2 {
+                    font-size: 2.25em;
+                }
 
 		/* Footer */
 
@@ -3076,6 +3127,26 @@ input, select, textarea {
 					line-height: 1.25em;
 					padding: 1.25em;
 				}
+				
+			#about {
+				text-align: center;
+				padding-right: 2em;
+				padding-left: 2em;
+				padding-bottom: 5em;
+				margin: 0 auto;
+			}
+
+				#about p.style1 {
+					margin-bottom: 1.5em;
+				}
+
+				#about p.style2 {
+					font-size: 1.5em;
+					letter-spacing: 0.05em;
+					line-height: 1.25em;
+					padding: 1.25em;
+				}
+
 
 		/* Features */
 
