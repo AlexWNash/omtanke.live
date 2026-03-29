@@ -2208,7 +2208,7 @@ input, select, textarea {
             transition: filter 10s;
 		}
 		#logo img:hover{
-            filter: drop-shadow(2px 2px 4px #b38c00);
+            filter: drop-shadow(4px 4px 4px #cca000);
             transition: filter 2s;
         }
 
