@@ -22,6 +22,29 @@
   font-display: swap; /* Optional: improves performance while the font loads */
 }
 
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 1em; /* width of the vertical scrollbar */
+  height: 1em; /* height of the horizontal scrollbar */
+}
+
+/* Style for the track (background) */
+::-webkit-scrollbar-track {
+  background: grey; /* color of the tracking area */
+  border-radius: 10px; /* roundness of the track */
+}
+
+/* Style for the thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #324D5E; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+/* Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #705800;
+}
+
 
 * {
   box-sizing: border-box;
@@ -49,8 +72,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
 body {
 	line-height: 1;
+	background-color: grey;
 }
 
 ol, ul {
@@ -199,7 +225,8 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 68em;
+		width: 80vw;
+
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -233,6 +260,55 @@ input, select, textarea {
 			}
 
 		}
+		.carousel{
+            width: 100%;
+
+        }
+
+        .carousel ul {
+          width: 100%;
+          height: 60vh;
+          padding: 0;
+          margin: 0;
+
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+
+          columns: 1;
+          text-align: center;
+
+        }
+        .carousel ul::column {
+            scroll-snap-align: center;
+
+        }
+
+        .carousel li {
+            list-style-type: none;
+            display: inline-block;
+            height: 500px;
+            width: 500px;
+            background-color: grey;
+            padding: 0em;
+            margin: 0.25em;
+            transition: height 1s;
+            transition: width 1s;
+        }
+
+        .carousel li:hover {
+            height: 550px;
+            width: 550px;
+            transition: height 1s;
+            transition: width 1s;
+
+        }
+
+        .carousel img{
+            height: 100%;
+            width: 100%;
+        }
+
+
 
 /* Row */
 
